@@ -764,6 +764,8 @@ bool BinarySearchTree<Key, Value>::isBalanced() const
 	if (!comparison) {
 		return false;
 	}
+
+	//account for subtrees of root node
 	else if ((left_height - right_height) > 1) {
 		return false;
 	}
